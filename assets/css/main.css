@@ -2945,6 +2945,7 @@ html[lang=ar] .pagination .page-item:last-child .page-link {
   z-index: 888;
   background-color: #fff;
   transition: all 0.3s ease;
+  box-shadow: 0 0 5px 0 rgba(39, 36, 36, 0.1);
 }
 @media screen and (max-width: 992px) {
   .page-navbar {
@@ -3175,20 +3176,6 @@ html[lang=ar] .page-navbar .navbar-content .nav-icons .nav-ic.bell::after {
   .page-navbar .navbar-content .nav-icons .side-open {
     display: flex;
   }
-}
-.page-navbar.scroll {
-  top: -1px;
-  padding: 7px;
-  box-shadow: 0 0 5px 0 rgba(39, 36, 36, 0.1);
-}
-.page-navbar.scroll .navbar-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.page-navbar.scroll .navbar-content .logo .logo-img {
-  max-width: 65px;
-  max-height: 80px;
 }
 
 .footer {

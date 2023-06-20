@@ -16,6 +16,7 @@
     z-index: 888;
     background-color: $white;
     transition: $main-transition;
+    box-shadow: $main-shadow;
 
     @media screen and (max-width:$screen-lg) {
         position: unset;
@@ -234,21 +235,21 @@
         }
     }
 
-    &.scroll{
-        top: -1px;
-        padding: 7px;
-        box-shadow: $main-shadow;
+    // &.scroll{
+    //     top: -1px;
+    //     padding: 7px;
+    //     box-shadow: $main-shadow;
 
-        .navbar-content{
-            @include between;
+    //     .navbar-content{
+    //         @include between;
     
-            .logo{
-                .logo-img{
-                    max-width: 65px;
-                    max-height: 80px;
-                }
-            }
-        }
-    }
+    //         .logo{
+    //             .logo-img{
+    //                 max-width: 65px;
+    //                 max-height: 80px;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
