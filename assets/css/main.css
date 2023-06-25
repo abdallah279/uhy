@@ -3540,12 +3540,12 @@ html[lang=ar] .principle-card::before {
   height: 100%;
 }
 .team-card .team-img {
-  height: 100px;
+  height: 80px;
   position: relative;
 }
 .team-card .team-img .img {
   position: absolute;
-  top: 18px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 155px;
@@ -3593,7 +3593,7 @@ html[lang=ar] .principle-card::before {
   line-height: 1.6;
   font-family: fontReg;
 }
-.team-card .team-content:hover::after {
+.team-card:hover .team-content::after {
   transform: translateX(-50%) rotate(360deg) scale(1.2);
 }
 

@@ -248,12 +248,12 @@
 .team-card{
   height: 100%;
   .team-img{
-    height: 100px;
+    height: 80px;
     position: relative;
 
     .img{
       position: absolute;
-      top: 18px;
+      top: 0px;
       left: 50%;
       transform: translateX(-50%);
       max-width: 155px;
@@ -305,8 +305,8 @@
     }
   }
 
-  .team-content:hover{
-    &::after{
+  &:hover{
+    .team-content::after{
       transform: translateX(-50%) rotate(360deg) scale(1.2);
     }
   }
