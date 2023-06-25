@@ -3545,11 +3545,11 @@ html[lang=ar] .principle-card::before {
 }
 .team-card .team-img .img {
   position: absolute;
-  top: 0;
+  top: 18px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 155px;
-  max-height: 180px;
+  max-height: 160px;
   z-index: 2;
 }
 .team-card .team-content {
