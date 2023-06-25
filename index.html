@@ -23,7 +23,7 @@
     <!-- FlatPicker -->
     <link rel="stylesheet" href="./assets/plugins/FlatPicker/flatpickr.css">
     <!-- Aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Style Css -->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
@@ -80,10 +80,7 @@
                             <a href="#" class="lang-item">English</a>
                         </li>
                     </ul>
-                </div>
-
-                <!-- <button class="main-btn up md">احصل على عرض أسعار</button> -->
-                
+                </div>                
 
             </div>
         </div>
@@ -155,7 +152,7 @@
 
 
     <!-- Start Some Info Section -->
-    <section class="some-info sec-padding" data-aos="fade-up" data-aos-duration="1700">
+    <section class="some-info main-padding" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
         <div class="container">
 
             <div class="content">
@@ -174,38 +171,45 @@
 
 
     <!-- Start principles Section -->
-    <section class="principles-section main-padding">
+    <section class="principles-section main-padding" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
         <div class="container">
 
-            <div class="principles-cards grid-3">
+            <div class="principles-cards">
 
-                <div class="principle-card" data-aos="fade-left" data-aos-duration="1700">
+                <div class="row gy-6">
+                    
+                    <div class="col-lg-4">
 
-                    <img src="./assets/imgs/icons/icons8-professional-100.png" alt="" class="icon">
-                    <h2 class="prin-name">الكفاءة المهنية</h2>
-                    <p class="prin-desc">
-                        إن تحقيق التوازن بين الخبرات المتألقة لأكثر من 25 عام والشباب الطموح داعم رئيسي لكفاءة مهنية عالية تقدم خدماتها بأعلى المعايير لبناء ثقة متبادلة مع عملائنا الكرام
-                    </p>
+                        <div class="principle-card mx-auto">
+                            <h2 class="prin-name">الكفاءة المهنية</h2>
+                            <p class="prin-desc">
+                                إن تحقيق التوازن بين الخبرات المتألقة لأكثر من 25 عام والشباب الطموح داعم رئيسي لكفاءة مهنية عالية تقدم خدماتها بأعلى المعايير لبناء ثقة متبادلة مع عملائنا الكرام
+                            </p>
+                        </div>
 
-                </div>
+                    </div>
 
-                <div class="principle-card" data-aos="fade-up" data-aos-duration="1700">
+                    <div class="col-lg-4">
 
-                    <img src="./assets/imgs/icons/icons8-achievement-100 (1).png" alt="" class="icon">
-                    <h2 class="prin-name">الإنجـــاز</h2>
-                    <p class="prin-desc">
-                        إن سرعة استجابة فريق العمل ناتج عن تخطيط منظم بتوقيت محدد يحقق إنجاز نفخر به ويسعد عملاءنا.
-                    </p>
+                        <div class="principle-card mx-auto">
+                            <h2 class="prin-name">الإنجـــاز</h2>
+                            <p class="prin-desc">
+                                إن سرعة استجابة فريق العمل ناتج عن تخطيط منظم بتوقيت محدد يحقق إنجاز نفخر به ويسعد عملاءنا.
+                            </p>
+                        </div>
 
-                </div>
+                    </div>
 
-                <div class="principle-card" data-aos="fade-right" data-aos-duration="1700">
+                    <div class="col-lg-4">
 
-                    <img src="./assets/imgs/icons/icons8-warranty-100.png" alt="" class="icon">
-                    <h2 class="prin-name">الجودة</h2>
-                    <p class="prin-desc">
-                        تحقيق معايير الجودة القصوى طموح نسعى له ونعمل لأجله لذلك نضع الهدف ونرسم الخطة ونحدد معيار الأداء, ونتقبل الأراء الهادفة للتطوير.
-                    </p>
+                        <div class="principle-card mx-auto">
+                            <h2 class="prin-name">الجودة</h2>
+                            <p class="prin-desc">
+                                تحقيق معايير الجودة القصوى طموح نسعى له ونعمل لأجله لذلك نضع الهدف ونرسم الخطة ونحدد معيار الأداء, ونتقبل الأراء الهادفة للتطوير.
+                            </p>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -217,86 +221,227 @@
 
 
     <!-- Start Services Section -->
-    <div class="services-sec sec-padding">
+    <section class="services-sec main-padding" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
         <div class="container">
 
             <h2 class="main-title mb-5">خدماتنا</h2>
 
-            <div class="services-items row gy-5">
-                
-                <div class="col-lg-2" data-aos="fade-left" data-aos-duration="1700">
-                    <div class="services-item">
-                        <div class="num">1</div>
-                        <div class="text">المراجعة والتدقيق</div>
+            <div class="services-cards services-slider owl-carousel">
+
+                <a href="services-detailes.html" class="services-card">
+
+                    <div class="img">
+                        <img src="./assets/imgs/card_img1.jpeg" alt="">
+                        <img src="./assets/imgs/card_img1.jpeg" class="services-img" alt="">
                     </div>
-                </div>
-                
-                <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1700">
-                    <div class="services-item">
-                        <div class="num">2</div>
-                        <div class="text">المراجعة الداخلية واعادة الهكلية وانشاء النظم الرقابية</div>
+
+                    <div class="services-content">
+
+                        <h5 class="services-head">إدارة الاستشارات</h5>
+                        <p class="services-desc">
+                            إننا داخل يو اتش واى بيلارز نولي اهتمامًا كبيرًا لقطاع الأعمال الخيرية
+                            إننا داخل يو اتش واى بيلارز نولي اهتمامًا كبيرًا لقطاع الأعمال الخيرية
+                        </p>
+
+                        <i class="fa-solid fa-arrow-left-long left-icon"></i>
                     </div>
-                </div>
 
-                <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1700">
-                    <div class="services-item">
-                        <div class="num">3</div>
-                        <div class="text">المراجعة والتدقيق</div>
+                </a>
+
+                <a href="services-detailes.html" class="services-card">
+
+                    <div class="img">
+                        <img src="./assets/imgs/img4.jpg" alt="">
+                        <img src="./assets/imgs/img4.jpg" alt="" class="services-img">
                     </div>
-                </div>
 
-                <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1700">
-                    <div class="services-item">
-                        <div class="num">4</div>
-                        <div class="text">المراجعة والتدقيق</div>
+                    <div class="services-content">
+
+                        <h5 class="services-head">خدمات التأكيد</h5>
+                        <p class="services-desc">
+                            لا تتعلق أعمال التدقيق المستقل وخدمات التأكيد بالحوكمة الجيدة فحسب
+                            لا تتعلق أعمال التدقيق المستقل وخدمات التأكيد بالحوكمة الجيدة فحسب
+                        </p>
+
+                        <i class="fa-solid fa-arrow-left-long left-icon"></i>
                     </div>
-                </div>
 
+                </a>
 
-                <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1700">
-                    <div class="services-item">
-                        <div class="num">5</div>
-                        <div class="text">المراجعة والتدقيق</div>
+                <a href="services-detailes.html" class="services-card">
+
+                    <div class="img">
+                        <img src="./assets/imgs/img5.jfif" alt="">
+                        <img src="./assets/imgs/img5.jfif" alt="" class="services-img">
                     </div>
-                </div>
 
+                    <div class="services-content">
 
-                <div class="col-lg-2" data-aos="fade-right" data-aos-duration="1700">
-                    <div class="services-item">
-                        <div class="num">6</div>
-                        <div class="text">المراجعة والتدقيق</div>
+                        <h5 class="services-head">خدمات المحاسبة</h5>
+                        <p class="services-desc">
+                            إن تأسيس شركة ينطوي على أكثر من مجرد توفير منتج أو خدمة يريدها العملاء
+                        </p>
+
+                        <i class="fa-solid fa-arrow-left-long left-icon"></i>
                     </div>
-                </div>
 
+                </a>
 
-                <div class="col-lg-2" data-aos="fade-left" data-aos-duration="1700">
-                    <div class="services-item">
-                        <div class="num">7</div>
-                        <div class="text">المراجعة والتدقيق</div>
+                <a href="services-detailes.html" class="services-card">
+
+                    <div class="img">
+                        <img src="./assets/imgs/slider_img2.jpg" alt="">
+                        <img src="./assets/imgs/slider_img2.jpg" alt="" class="services-img">
                     </div>
-                </div>
 
+                    <div class="services-content">
 
-                <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1700">
-                    <div class="services-item">
-                        <div class="num">8</div>
-                        <div class="text">المراجعة والتدقيق</div>
+                        <h5 class="services-head">المخاطر والتدقيق الداخلي</h5>
+                        <p class="services-desc">
+                            من المتوقع أن تمتثل الشركات والمؤسسات لمتطلبات الحوكمة الصارمة المتزايدة
+                        </p>
+
+                        <i class="fa-solid fa-arrow-left-long left-icon"></i>
                     </div>
-                </div>
 
+                </a>
 
-                <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1700">
-                    <div class="services-item">
-                        <div class="num">9</div>
-                        <div class="text">المراجعة والتدقيق</div>
+                <a href="services-detailes.html" class="services-card">
+
+                    <div class="img">
+                        <img src="./assets/imgs/img4.jpg" alt="">
+                        <img src="./assets/imgs/img4.jpg" alt="" class="services-img">
                     </div>
-                </div>
+
+                    <div class="services-content">
+
+                        <h5 class="services-head">خدمات الضرائب</h5>
+                        <p class="services-desc">
+                            إن تطبيق استراتيجية في بيئة ضريبية متزايدة التعقيد يعد أمرًا حيويًا حتى
+                            إن تطبيق استراتيجية في بيئة ضريبية متزايدة التعقيد يعد أمرًا حيويًا حتى
+                        </p>
+
+                        <i class="fa-solid fa-arrow-left-long left-icon"></i>
+                    </div>
+
+                </a>
 
             </div>
             
         </div>
-    </div>
+    </section>
     <!-- End Services Section -->
+
+
+    <!-- Start Our Team  -->
+    <section class="team-sec main-padding" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+        <div class="container">
+
+            <h2 class="main-title mb-5">فريق الشركة</h2>
+
+
+            <div class="team-cards grid-4">
+
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="./assets/imgs/team-1.png" alt="" class="img">
+                    </div>
+                    <div class="team-content shadow">
+                        <h3 class="team-name">محمد حمدين</h3>
+                        <h4 class="team-jop">نائب الرئيس التنفيذى</h4>
+                        <p class="team-desc">
+                            - هذا النص
+                            هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="./assets/imgs/team-2.png" alt="" class="img">
+                    </div>
+                    <div class="team-content shadow">
+                        <h3 class="team-name">رياض بن بليهد</h3>
+                        <h4 class="team-jop">المدير العام والشريك الرئيس</h4>
+                        <p class="team-desc">
+                            - هذا النص
+                            هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="./assets/imgs/team-1.png" alt="" class="img">
+                    </div>
+                    <div class="team-content shadow">
+                        <h3 class="team-name">باسل سلمان</h3>
+                        <h4 class="team-jop">نائب الرئيس التنفيذى</h4>
+                        <p class="team-desc">
+                            - هذا النص
+                            هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="./assets/imgs/team-2.png" alt="" class="img">
+                    </div>
+                    <div class="team-content shadow">
+                        <h3 class="team-name">محمد حمدين</h3>
+                        <h4 class="team-jop">نائب الرئيس التنفيذى</h4>
+                        <p class="team-desc">
+                            - هذا النص
+                            هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Our Team  -->
+
+
+    <!-- Start Our Numbers -->
+    <section class="our-numbers main-padding">
+        <img src="./assets/imgs/slider_img2.jpg" alt="" class="bg-img">
+        <div class="container">
+
+            <div class="number-items">
+
+                <div class="number-item">
+                    <div class="num">1500</div>
+                    <div class="text">عدد زيارات الموقع</div>
+                </div>
+    
+                <div class="number-item">
+                    <div class="num">300</div>
+                    <div class="text">عدد العملاء</div>
+                </div>
+    
+                <div class="number-item">
+                    <div class="num">700</div>
+                    <div class="text">عدد الاستشارات</div>
+                </div>
+                
+                <div class="number-item">
+                    <div class="num">1500</div>
+                    <div class="text">عدد زيارات الموقع</div>
+                </div>
+    
+                <div class="number-item">
+                    <div class="num">300</div>
+                    <div class="text">عدد العملاء</div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+    <!-- End Our Numbers -->
 
 
     <!-- Start clients Section -->
@@ -348,7 +493,7 @@
 
             <div class="row footer-cards gy-4">
 
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-3 col-md-12">
                     <div class="foot-content">
                         <a href="index.html">
                             <img src="assets/imgs/logo.png" alt="" class="foot-logo">
@@ -357,14 +502,12 @@
                         <p class="footer-info">
                             " UHY RIYADH " هي إحدى الشركات المستقلة في شبكة "يو اتش واي انترناشونال"
                              وهي شبكة رائدة من شركات المحاسبة والاستشارات ولها مكاتب في 
-                            أكثر من 300 موقع موزعة على 100 بلد. تأسست شركة UHY RIYADH في دولة السعودية وتمتلك مجموعة
-                             واسعة من الخبرات في مختلف 
-                            القطاعات داخل السوق السعودى .
+                            أكثر من 300 موقع موزعة على 100 بلد.
                         </p>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-3 col-sm-6">
                     <div class="foot-content">
                         <h3 class="footer-head">روابط سريعة</h3>
                         <ul class="footer-links">
@@ -398,7 +541,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-3 col-sm-6">
                     <div class="foot-content">
                         <h3 class="footer-head">تواصل معنا</h3>
 
@@ -428,6 +571,37 @@
                     </div>
                 </div>
 
+                <div class="col-lg-3 col-sm-6">
+                    <div class="foot-content">
+                        <h3 class="footer-head">وسائل التواصل</h3>
+
+                        <div class="social-links">
+                            
+                            <a href="#" class="link">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" class="link">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+
+                            <a href="#" class="link">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+
+                            <a href="#" class="link">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="#" class="link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </footer>
@@ -446,6 +620,80 @@
     <div class="overlay-m"></div>
 
 
+    <!-- Get A Quote -->
+    <button type="button" class="get-quote up" data-bs-toggle="modal" data-bs-target="#quoteForm">Get A Quote</button>
+
+    <div class="modal fade modal-map" id="quoteForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="w-100">
+
+                    <div class="modal-body">
+
+                        <h3 class="fs-18 c-black mb-4 text-center">طلب عرض أسعار</h3>
+
+                        <div class="row gy-3">
+
+                            <div class="col-12">
+                                <div class="main-input">
+                                    <div class="main-label">اختر الخدمة</div>
+                                    <select name="" id="" class="select">
+                                        <option value="" selected disabled>اختر الخدمة</option>
+                                        <option value="">اختر الخدمة</option>
+                                        <option value="">اختر الخدمة</option>
+                                        <option value="">اختر الخدمة</option>
+                                        <option value="">اختر الخدمة</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="main-input">
+                                    <div class="main-label">الاسم الكامل</div>
+                                    <input type="text" placeholder="الاسم الكامل" class="input-me">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="main-input">
+                                    <div class="main-label">البريد الالكترونى</div>
+                                    <input type="email" placeholder="البريد الالكترونى" class="input-me">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="main-input">
+                                    <div class="main-label">رقم الهاتف</div>
+                                    <input type="phone" placeholder="رقم الهاتف" class="input-me">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="main-input">
+                                    <div class="main-label">البلد</div>
+                                    <input type="text" placeholder="أدخل البلد" class="input-me">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="main-input">
+                                    <textarea class="input-me text-area" placeholder="وصف المشروع"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="main-btn up confirm-btn" data-bs-dismiss="modal">تأكيد</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- Bootstrap 5 -->
     <script src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
@@ -460,15 +708,23 @@
     <!-- FlatPicker -->
     <script src="./assets/plugins/FlatPicker/flatpickr.js"></script>
     <!-- Aos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/plugins/aos/aos.js"></script>
+    <!-- Counter -->
+    <script src="./assets/plugins/countUp/waypoints.js"></script>
+    <script src="./assets/plugins/countUp/jquery.countup.min.js"></script>
 
     <script>
         AOS.init();
-      </script>
+    </script>
 
+    <!-- Counter -->
+    <script>
+        $('.num').countUp();
+    </script>
+
+    <!-- main-slider -->
     <script>
         $(document).ready(function () { 
-
             let isRtl2 = $('html[lang="ar"]').length > 0;
             $(".main-slider").owlCarousel({
                 items: 1,
@@ -478,10 +734,38 @@
                 autoplayTimeout: 5000,
                 smartSpeed: 2000,
                 autoplayHoverPause: false,
-                // margin: 10,
                 dots: true,
                 animateOut: "fadeOut",
                 animateIn: "fadeIn",
+                autoplay: true,
+            });
+        })
+    </script>
+
+    <!-- services Slider -->
+    <script>
+        $(document).ready(function () { 
+            let items = document.querySelectorAll('.services-card');
+            let loopSlider = false;
+
+            if(items.length > 4){
+                loopSlider = true;
+            } else{
+                loopSlider = false;
+            }
+
+            let isRtl2 = $('html[lang="ar"]').length > 0;
+            $(".services-slider").owlCarousel({
+                items: 4,
+                loop: loopSlider,
+                rtl: isRtl2,
+                autoplaySpeed: 3000,
+                autoplayTimeout: 5000,
+                smartSpeed: 2000,
+                autoplayHoverPause: false,
+                margin: 25,
+                dots: false,
+                nav: false,
                 autoplay: true,
             });
          })
@@ -489,39 +773,38 @@
 
     </script>
 
-
-<!-- Brands Carousel -->
-<script>
-    $(document).ready(function(){
-        let isRtl2 = $('html[lang="ar"]').length > 0;
-        $(".brands-carousel").owlCarousel({
-            items:2,
-            loop: true,
-            rtl: isRtl2 ? true : false,
-            margin: 20,
-            dots: false,
-            autoplay: true,
-            slideTransition: 'linear',
-            autoplayTimeout: 2800,
-            autoplaySpeed: 2800,
-            autoplayHoverPause: true,
-            responsive:{
-                1200:{
-                    items:7
-                },
-                1000:{
-                    items:6
-                },
-                800:{
-                    items:4
-                },
-                400:{
-                    items: 3
+    <!-- Brands Carousel -->
+    <script>
+        $(document).ready(function(){
+            let isRtl2 = $('html[lang="ar"]').length > 0;
+            $(".brands-carousel").owlCarousel({
+                items:2,
+                loop: true,
+                rtl: isRtl2 ? true : false,
+                margin: 20,
+                dots: false,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplayTimeout: 2800,
+                autoplaySpeed: 2800,
+                autoplayHoverPause: true,
+                responsive:{
+                    1200:{
+                        items:7
+                    },
+                    1000:{
+                        items:6
+                    },
+                    800:{
+                        items:4
+                    },
+                    400:{
+                        items: 3
+                    }
                 }
-            }
+            });
         });
-    });
-</script>
+    </script>
 
     <!-- Main Js -->
     <script src="./assets/js/main.js"></script>

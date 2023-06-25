@@ -8,27 +8,32 @@
 
 @font-face {
     font-family: fontDemi;
-    src: url('../fonts/ArbFONTS-URW-DIN-Arabic-Demi.ttf');
+    src: url('../fonts/GEDinarOne-Medium.otf');
 }
 
 @font-face {
     font-family: fontReg;
-    src: url('../fonts/ArbFONTS-URW-DIN-Arabic-Light.ttf');
+    src: url('../fonts/GE-Dinar-One-Light.otf');
 }
 
 @font-face {
     font-family: fontMed;
+    src: url('../fonts/GEDinarOne-Medium.otf');
+}
+
+@font-face {
+    font-family: fontUrw;
     src: url('../fonts/ArbFONTS-URW-DIN-Arabic-Medium.ttf');
 }
 
 @font-face {
-    font-family: fontBold;
-    src: url('../fonts/ArbFONTS-URW-DIN-Arabic-Bold.ttf');
+    font-family: fontPrima;
+    src: url('../fonts/FontsFree-Net-Montserrat-SemiBold.ttf');
 }
 
 @font-face {
-    font-family: fontPrima;
-    src: url('../../fonts/prima_serif_roman_bt.ttf');
+    font-family: JF-flat;
+    src: url('../fonts/alfont_com_خط-جذور-فلات-عريض.ttf');
 }
 
 html {

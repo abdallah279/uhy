@@ -3,27 +3,29 @@
     background-color: $white;
     position: relative;
     margin-top: 20px;
+    font-family: JF-flat !important;
+    border-top: 2px solid #f2f2f2;
 
-    &::before{
-        content: '';
-        position: absolute;
-        top: -1.5px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: $orange;
-        width: 400px;
-        height: 3px;
-        border-radius: 10px;
+    // &::before{
+    //     content: '';
+    //     position: absolute;
+    //     top: -1.5px;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     background-color: green;
+    //     width: 400px;
+    //     height: 3px;
+    //     border-radius: 10px;
 
-        @media screen and (max-width:$screen-sm) {
-            width: calc(100% - 100px);
-        }
-    }
+    //     @media screen and (max-width:$screen-sm) {
+    //         width: calc(100% - 100px);
+    //     }
+    // }
 
     .foot-content{
         .footer-head{
             margin-bottom: 30px;
-            font-size: 18px;
+            font-size: 20px;
             color: $main;
             width: fit-content;
             font-family: fontDemi;
@@ -96,26 +98,23 @@
             }
         }
         
-        .foot-social{
+        .social-links{
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 7px;
+            flex-wrap: wrap;
 
-            .social-icon{
-                @include circle(37px);
+            .link{
+                @include circle(38px);
                 @include center;
-                background-color: $main;
-                
-                .social-ic{
-                    transition: $main-transition;
-                    max-width: 18px;
-                    max-height: 20px;
-                }
+                border: 1px solid $main;
+                font-size: 14px;
+                color: $main;
 
                 &:hover{
-                    .social-ic{
-                        transform: rotate(360deg);
-                    }
+                    background-color: $main;
+                    color: $white;
+                    transform: rotate(360deg);
                 }
             }
         }
@@ -128,12 +127,13 @@
 }
 
 .copy-right{
-    background-color: $sec;
-    padding: 10px 0;
+    // background-color: $sec;
+    border-top: 2px solid #f2f2f2;
+    padding: 13px 0;
     
     .text{
-        font-size: 14px;
-        color: $white;
+        font-size: 16px;
+        color: $black;
 
         .link{
             text-decoration: underline;
