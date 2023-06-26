@@ -202,12 +202,12 @@
 .grid-4{
   @include grid(240px, 30px);
 
-  @media screen and (max-width:$screen-md) {
-    @include grid(210px, 20px);
-  }
+  // @media screen and (max-width:$screen-md) {
+  //   @include grid(210px, 20px);
+  // }
 
-  @media screen and (max-width:510px) {
-    @include grid(150px, 15px);
+  @media screen and (max-width:$screen-xs) {
+    gap: 20px !important;
   }
 }
 
@@ -523,7 +523,7 @@
 .breadcrumb-con{
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   // margin-bottom: 25px;
   
 
@@ -531,15 +531,12 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 13px;
-    color: $main;
-
-    &.active{
-      color: $main;
-    }
-
+    font-size: 17px;
+    color: $white;
+    
     i{
-      font-size: 11px;
+      font-size: 15px;
+      color: $white;
     }
   }
 }

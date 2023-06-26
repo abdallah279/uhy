@@ -25,51 +25,57 @@
         top: 50%;
         transform: translateY(-50%);
         
-        .title {
-          font-size: 28px;
-          margin-bottom: 20px;
-          font-weight: bold;
-          opacity: 0;
-          color: #fff;
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          #{$ltr} & {
-            transform: translateX(-200px);
+          .title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            opacity: 0;
+            color: #fff;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            #{$ltr} & {
+              transform: translateX(-200px);
+            }
+            #{$rtl} & {
+              transform: translateX(200px);
+            }
+            transition: 0.5s;
+
+            @media (max-width: 550px) {
+              font-size: 20px;
+              margin-bottom: 12px;
+            }
+
           }
-          #{$rtl} & {
-            transform: translateX(200px);
+          
+          .disc {
+            font-size: 17px;
+            color: #fff;
+            // margin-bottom: 30px;
+            line-height: 1.6;
+            opacity: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            #{$ltr} & {
+              transform: translateX(-200px);
+            }
+            #{$rtl} & {
+              transform: translateX(200px);
+            }
+            transition: 0.5s;
+            @media (max-width: 550px) {
+              font-size: 15px;
+              // margin-bottom: 15px;
+              -webkit-line-clamp: 3;
+            }
           }
-          transition: 0.5s;
-          @media (max-width: 550px) {
-            font-size: 16px;
-            margin-bottom: 12px;
-          }
-        }
-        
-        .disc {
-          font-size: 17px;
-          color: #fff;
-          margin-bottom: 30px;
-          line-height: 1.6;
-          opacity: 0;
-          display: -webkit-box;
-          -webkit-line-clamp: 5;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          #{$ltr} & {
-            transform: translateX(-200px);
-          }
-          #{$rtl} & {
-            transform: translateX(200px);
-          }
-          transition: 0.5s;
-          @media (max-width: 550px) {
-            font-size: 13px;
-            margin-bottom: 15px;
-            -webkit-line-clamp: 3;
-          }
+
+        @media screen and (max-width:$screen-sm) {
+          width: calc(100% - 45px);
         }
       }
 
@@ -79,9 +85,6 @@
         object-fit: cover;
         @media (max-width: $screen-xl) {
           height: 450px;
-        }
-        @media (max-width: 550px) {
-          height: 250px;
         }
       }
 
@@ -114,9 +117,10 @@
       transform: translateX(-50%);
     }
 }
+/********************* Start main-slider section *********************/
 
 
-// some-info
+/********************* Start some-info section *********************/
 .some-info{
   .content{
     width: 540px;
@@ -147,8 +151,10 @@
     }
   }
 }
+/********************* End some-info section *********************/
 
 
+/********************* Start principle section *********************/
 .principle-card{
   position: relative;
   @include circle(320px);
@@ -160,6 +166,11 @@
   background-color: #fcfcfc;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
   transition: all .6s cubic-bezier(0.68, -0.30, 0.265, 2.1);
+
+  @media screen and (max-width:$screen-lg2) {
+    @include circle(300px);
+    padding: 80px 20px 20px;
+  }
 
 
   &::after{
@@ -184,6 +195,13 @@
       border-radius: 0 100% 100% 0 / 0 50% 50% 0;
       border-left: 0;
     }
+
+    @media screen and (max-width:$screen-lg2) {
+      border-width: 18px;
+      height: 360px;
+      width: 180px;
+    }
+  
   }
 
   &::before{
@@ -211,6 +229,12 @@
       border-radius: 100% 0 0 100% / 50% 0 0 50%;
       border-right: 0;
     }
+
+    @media screen and (max-width:$screen-lg2) {
+      border-width: 2px;
+      height: 350px;
+      width: 175px;
+    }
   }
 
   .prin-name{
@@ -218,6 +242,11 @@
     margin-bottom: 18px;
     color: $main;
     // font-weight: 600;
+
+    @media screen and (max-width:$screen-xs) {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
   }
 
   .prin-desc{
@@ -225,6 +254,10 @@
     color: $main;
     line-height: 1.6;
     text-align: center;
+
+    @media screen and (max-width:$screen-xs) {
+      font-style: 15px;
+    }
   }
 
   &:hover{
@@ -235,258 +268,10 @@
     }
   }
 }
-
-.brand-img {
-  max-width: 90px;
-  max-height: 100px;
-  width: fit-content !important;
-  margin: 0 auto;
-  /* object-fit: cover; */
-}
-
-/********************* Start team-card section *********************/
-.team-card{
-  height: 100%;
-  .team-img{
-    height: 80px;
-    position: relative;
-
-    .img{
-      position: absolute;
-      top: 0px;
-      left: 50%;
-      transform: translateX(-50%);
-      max-width: 155px;
-      max-height: 160px;
-      z-index: 2;
-    }
-  }
-  .team-content{
-    background-color: $main;
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    padding: 110px 30px 50px;
-    box-shadow: $nav-shadow;
-    transition: $main-transition;
-    height: calc(100% - 100px);
-
-    &::after{
-      position: absolute;
-      content: '';
-      width: 90%;
-      top: -160px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #1a67ab;
-      @include circle(250px);
-      transition: all .6s cubic-bezier(0.68, -0.30, 0.265, 2.1);
-    }
-
-    .team-name{
-      font-size: 28px;
-      color: $white;
-      margin-bottom: 7px;
-      font-weight: 600;
-    }
-
-    .team-jop{
-      font-size: 18px;
-      margin-bottom: 22px;
-      color: $white;
-      font-family: fontReg;
-    }
-
-    .team-desc{
-      font-size: 15px;
-      color: $white;
-      line-height: 1.6;
-      font-family: fontReg;
-    }
-  }
-
-  &:hover{
-    .team-content::after{
-      transform: translateX(-50%) rotate(360deg) scale(1.2);
-    }
-  }
-}
-/********************* End team-card section *********************/
-
-
-/********************* Start numbers section *********************/
-.our-numbers{
-  position: relative;
-
-  .bg-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    object-fit: cover;
-  }
-
-  &::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: -1;
-  }
-
-  .number-items{
-    @include center;
-    flex-wrap: wrap;
-    gap: 30px 85px;
-
-    .number-item{
-      text-align: center;
-      color: $white;
-
-      .num{
-        font-size: 34px;
-        margin-bottom: 10px;
-        font-family: JF-flat;
-      }
-
-      .text{
-        font-size: 20px;
-
-      }
-    }
-  }
-}
-/********************* End numbers section *********************/
-
-
-
-/********************* Start get-quote section *********************/
-.get-quote{
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  // bottom: 25px;
-  left: 0;
-
-  background-color: $main;
-  box-shadow: $main-shadow;
-  color: $white;
-  font-size: 14px;
-  // border-radius: 5px;
-  padding: 18px 10px;
-  z-index: 100;
-  writing-mode: vertical-rl;
-  text-transform: uppercase;
-  font-family: fontUrw;
-  transition: $main-transition;
-  overflow: hidden;
-  border: 1px solid $main;
-}
-/********************* End get-quote section *********************/
-
-
-/********************* Start Gallary section *********************/
-.gallary{
-
-  display: grid;
-  grid-template-areas:
-    'header sec three three'
-    'header four five six'
-    'seven seven last six';
-  gap: 10px;
-  grid-auto-rows: 280px;
-
-  .fancybox-img {
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-
-    &::after{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      content: '';
-      background-color: rgba(0,0,0,0.3);
-      transition: $main-transition;
-    }
-    
-    .gallary-img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: $main-transition;
-    }
-
-    &:hover{
-      &::after{
-        opacity: 0;
-      }
-
-      .gallary-img{
-        transform: scale(1.1);
-      }
-    }
-
-    &:first-child{
-      grid-area: header; 
-    }
-
-    &:nth-child(2){
-      grid-area: sec; 
-    }
-
-    &:nth-child(3){
-      grid-area: three; 
-    }
-
-    &:nth-child(4){
-      grid-area: four; 
-    }
-
-    &:nth-child(5){
-      grid-area: five; 
-    }
-
-    &:nth-child(6){
-      grid-area: six; 
-    }
-
-    &:nth-child(7){
-      grid-area: seven; 
-    }
-
-    &:nth-child(8){
-      grid-area: last; 
-    }
-  }
-}
-/********************* End Gallary section *********************/
-
+/********************* End principle section *********************/
 
 
 /********************* Start services section *********************/
-.services-cards{
-  .owl-dots{
-  
-    .owl-dot{
-      margin-top: 50px;
-      background-color: $main !important;
-  
-      &.active{
-        opacity: 1;
-      }
-    }
-  }
-  
-}
-
 .services-card{
   background-color: #f8f8f8;
   border-radius: 15px;
@@ -500,7 +285,7 @@
     &::after{
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       @include dir-left(0);
       border-style: solid;
       transition: all .4s ease;
@@ -618,7 +403,6 @@
   }
 }
 
-
 @keyframes bounce {
   0%,20%{
       transform: translatex(0);
@@ -655,3 +439,319 @@
   }
 }
 /********************* End services section *********************/
+
+
+/********************* Start brand section *********************/
+.brand-img {
+  max-width: 90px;
+  max-height: 100px;
+  width: fit-content !important;
+  margin: 0 auto;
+  /* object-fit: cover; */
+}
+/********************* End brand section *********************/
+
+
+/********************* Start team-card section *********************/
+.team-card{
+  height: 100%;
+  .team-img{
+    height: 80px;
+    position: relative;
+
+    .img{
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 155px;
+      max-height: 160px;
+      z-index: 2;
+    }
+  }
+  .team-content{
+    background-color: $main;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    padding: 110px 30px 50px;
+    box-shadow: $nav-shadow;
+    transition: $main-transition;
+    height: calc(100% - 100px);
+
+    &::after{
+      position: absolute;
+      content: '';
+      width: 90%;
+      top: -160px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #1a67ab;
+      @include circle(250px);
+      transition: all .6s cubic-bezier(0.68, -0.30, 0.265, 2.1);
+    }
+
+    .team-name{
+      font-size: 28px;
+      color: $white;
+      margin-bottom: 7px;
+      font-weight: 600;
+
+      @media screen and (max-width:$screen-xs) {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .team-jop{
+      font-size: 18px;
+      margin-bottom: 22px;
+      color: $white;
+      font-family: fontReg;
+    }
+
+    .team-desc{
+      font-size: 15px;
+      color: $white;
+      line-height: 1.6;
+      font-family: fontReg;
+    }
+  }
+
+  &:hover{
+    .team-content::after{
+      transform: translateX(-50%) rotate(360deg) scale(1.2);
+    }
+  }
+}
+/********************* End team-card section *********************/
+
+
+/********************* Start numbers section *********************/
+.our-numbers{
+  position: relative;
+
+  .bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+
+  .number-items{
+    @include center;
+    flex-wrap: wrap;
+    gap: 30px 85px;
+
+    @media screen and (max-width:$screen-sm) {
+      justify-content: start;
+      gap: 20px;
+    }
+
+    .number-item{
+      text-align: center;
+      color: $white;
+
+      .num{
+        font-size: 34px;
+        margin-bottom: 10px;
+        font-family: JF-flat;
+
+        @media screen and (max-width:$screen-sm) {
+          font-size: 28px;
+        }
+      }
+
+      .text{
+        font-size: 20px;
+
+        @media screen and (max-width:$screen-sm) {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+/********************* End numbers section *********************/
+
+
+/********************* Start get-quote section *********************/
+.get-quote{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  // bottom: 25px;
+  left: 0;
+
+  background-color: $main;
+  box-shadow: $main-shadow;
+  color: $white;
+  font-size: 14px;
+  // border-radius: 5px;
+  padding: 18px 10px;
+  z-index: 100;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  font-family: fontUrw;
+  transition: $main-transition;
+  overflow: hidden;
+  border: 1px solid $main;
+}
+/********************* End get-quote section *********************/
+
+
+/********************* Start Gallary section *********************/
+.gallary{
+
+  display: grid;
+  grid-template-areas:
+    'header sec three three'
+    'header four five six'
+    'seven seven last six';
+  gap: 10px;
+  grid-auto-rows: 200px;
+
+  @media screen and (max-width:$screen-lg) {
+    grid-auto-rows: 180px;
+  }
+
+  @media screen and (max-width:$screen-md) {
+    // grid-template-columns: 2fr;
+    @include grid(170px, 10px);
+    grid-template-areas: unset;
+  }
+
+  .fancybox-img {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+
+    &::after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-color: rgba(0,0,0,0.3);
+      transition: $main-transition;
+    }
+    
+    .gallary-img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: $main-transition;
+    }
+
+    &:hover{
+      &::after{
+        opacity: 0;
+      }
+
+      .gallary-img{
+        transform: scale(1.1);
+      }
+    }
+
+    &:first-child{
+      grid-area: header; 
+    }
+
+    &:nth-child(2){
+      grid-area: sec; 
+    }
+
+    &:nth-child(3){
+      grid-area: three; 
+    }
+
+    &:nth-child(4){
+      grid-area: four; 
+    }
+
+    &:nth-child(5){
+      grid-area: five; 
+    }
+
+    &:nth-child(6){
+      grid-area: six; 
+    }
+
+    &:nth-child(7){
+      grid-area: seven; 
+    }
+
+    &:nth-child(8){
+      grid-area: last; 
+    }
+
+    @media screen and (max-width:$screen-md) {
+      grid-area: unset !important;
+    }
+  }
+}
+/********************* End Gallary section *********************/
+
+
+/********************* Start page-header section *********************/
+.page-header{
+  position: relative;
+  z-index: 2;
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #003731b5;
+    z-index: -1;
+  }
+
+  .section-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+  }
+
+  .page-info{
+    padding-top: 160px;
+    padding-bottom: 40px;
+
+    @media screen and (max-width:$screen-xs) {
+      padding-top: 80px;
+      padding-bottom: 25px;
+    }
+    
+    .page-head{
+      font-size: 30px;
+      color: $white;
+      margin-bottom: 18px;
+      
+      @media screen and (max-width:$screen-xs) {
+        font-size: 26px;
+      }
+    }
+  }
+}
+/********************* End page-header section *********************/

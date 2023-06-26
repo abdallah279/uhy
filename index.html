@@ -63,8 +63,12 @@
                     <a href="gallary.html" class="link">معرض الصور</a>
                     <a href="contact-us.html" class="link">تواصل معنا</a>
                 </div>
+                
+                <div class="dropdown d-flex gap-2 align-items-center">
+                    <div class="side-open">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
 
-                <div class="dropdown">
                     <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="./assets/imgs/icons/lang_ic.png" class="drop-ic" alt="">
                         <span class="lang drop-text">العربية</span>
@@ -178,7 +182,7 @@
 
                 <div class="row gy-6">
                     
-                    <div class="col-lg-4">
+                    <div class="col-xl-4 col-md-6">
 
                         <div class="principle-card mx-auto">
                             <h2 class="prin-name">الكفاءة المهنية</h2>
@@ -189,7 +193,7 @@
 
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-xl-4 col-md-6">
 
                         <div class="principle-card mx-auto">
                             <h2 class="prin-name">الإنجـــاز</h2>
@@ -200,7 +204,7 @@
 
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-xl-4 col-md-6">
 
                         <div class="principle-card mx-auto">
                             <h2 class="prin-name">الجودة</h2>
@@ -756,8 +760,7 @@
 
             let isRtl2 = $('html[lang="ar"]').length > 0;
             $(".services-slider").owlCarousel({
-                items: 4,
-                loop: loopSlider,
+                items: 1,
                 rtl: isRtl2,
                 autoplaySpeed: 3000,
                 autoplayTimeout: 5000,
@@ -767,6 +770,21 @@
                 dots: false,
                 nav: false,
                 autoplay: true,
+                responsive: {
+                    1200:{
+                        items: 4,
+                    },
+                    991:{
+                        items: 3,
+                    },
+                    560: {
+                        items: 2,
+                        loop: loopSlider,
+                    },
+                    320:{
+                        loop: true,
+                    }
+                }
             });
          })
 
