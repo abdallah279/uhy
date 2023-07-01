@@ -1688,7 +1688,7 @@ html[lang=ar] .main-imgs .main-img:not(:last-child) {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: #094d8e;
+  color: #1a67ab;
   font-size: 15px;
   cursor: pointer;
   pointer-events: none;
@@ -3939,4 +3939,99 @@ html[lang=ar] .services-card:hover .services-content .left-icon {
   }
 }
 
-/********************* End page-header section *********************//*# sourceMappingURL=main.css.map */
+/********************* End page-header section *********************/
+/********************* Start contact-box section *********************/
+.contact-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+@media screen and (max-width: 768px) {
+  .contact-box {
+    padding: 15px;
+    gap: 12px;
+  }
+}
+.contact-box .ic {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #094d8e;
+  font-size: 24px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .contact-box .ic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+.contact-box .name {
+  font-size: 18px;
+  color: #272424;
+}
+@media screen and (max-width: 768px) {
+  .contact-box .name {
+    font-size: 16px;
+  }
+}
+.contact-box .desc {
+  font-size: 14px;
+  color: #272424;
+  font-family: JF-flat !important;
+}
+@media screen and (max-width: 768px) {
+  .contact-box .desc {
+    font-size: 13px;
+  }
+}
+.contact-box:hover {
+  transform: translateY(-10px);
+}
+.contact-box:hover .ic {
+  background-color: #1a67ab;
+}
+
+.contact-form {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 35px 25px;
+  transition: all 0.3s ease;
+  margin-bottom: -50px;
+  position: relative;
+  z-index: 65;
+}
+@media screen and (max-width: 768px) {
+  .contact-form {
+    padding: 20px 15px;
+  }
+}
+.contact-form .input-g {
+  margin-bottom: 24px;
+}
+.contact-form .input-me {
+  background-color: #fff !important;
+}
+
+.contact-img {
+  max-width: 100%;
+  max-height: 400px;
+}
+@media screen and (max-width: 992px) {
+  .contact-img {
+    display: none;
+  }
+}
+
+/********************* End contact-box section *********************//*# sourceMappingURL=main.css.map */

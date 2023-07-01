@@ -630,7 +630,6 @@
   }
 
   @media screen and (max-width:$screen-md) {
-    // grid-template-columns: 2fr;
     @include grid(170px, 10px);
     grid-template-areas: unset;
   }
@@ -755,3 +754,102 @@
   }
 }
 /********************* End page-header section *********************/
+
+
+
+/********************* Start contact-box section *********************/
+.contact-box{
+  background-color: $white;
+  border-radius: 12px;
+  // box-shadow: $main-shadow;
+  // border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: $main-transition;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  @media screen and (max-width:$screen-md) {
+    padding: 15px;
+    gap: 12px;
+  }
+  
+  .ic{
+    @include circle(60px);
+    @include center;
+    background-color: $main;
+    font-size: 24px;
+    color: $white;
+    transition: $main-transition;
+
+    @media screen and (max-width:$screen-md) {
+      @include circle(50px);
+      font-size: 20px;
+    }
+  }
+
+  .name{
+    font-size: 18px;
+    color: $black;
+
+    @media screen and (max-width:$screen-md) {
+      font-size: 16px;
+    }
+  }
+  
+  .desc{
+    font-size: 14px;
+    color: $black;
+    font-family: JF-flat !important;
+
+    @media screen and (max-width:$screen-md) {
+      font-size: 13px;
+    }
+  }
+
+
+  &:hover{
+    transform: translateY(-10px);
+
+    .ic{
+      background-color: #1a67ab;
+    }
+  }
+
+}
+
+.contact-form{
+  background-color: $white;
+  border-radius: 12px;
+  // box-shadow: $main-shadow;
+  // border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 35px 25px;
+  transition: $main-transition;
+  margin-bottom: -50px;
+  position: relative;
+  z-index: 65;
+
+  @media screen and (max-width:$screen-md) {
+    padding: 20px 15px;
+  }
+
+  .input-g{
+    margin-bottom: 24px;
+  }
+
+  .input-me{
+    background-color: $white !important;
+    // border: 1px solid #ddd !important;
+  }
+}
+
+.contact-img{
+  max-width: 100%;
+  max-height: 400px;
+
+  @media screen and (max-width:$screen-lg) {
+    display: none;
+  }
+}
+/********************* End contact-box section *********************/
