@@ -213,8 +213,6 @@
     
     border: 3px solid $blue;
     display: inline-block;
-    // border-left: unset;
-    // background-color: beige;
     height: 363px;
     width: 177px;
     overflow: hidden;
@@ -254,6 +252,10 @@
     color: $main;
     line-height: 1.6;
     text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 
     @media screen and (max-width:$screen-xs) {
       font-style: 15px;
@@ -594,14 +596,11 @@
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  // bottom: 25px;
   left: 0;
-
   background-color: $main;
   box-shadow: $main-shadow;
   color: $white;
   font-size: 14px;
-  // border-radius: 5px;
   padding: 18px 10px;
   z-index: 100;
   writing-mode: vertical-rl;
@@ -856,7 +855,7 @@
 
 
 
-/********************* Start contact-box section *********************/
+/********************* Start about-con section *********************/
 .about-con{
   display: flex;
   align-items: start;
@@ -937,4 +936,70 @@
     }
   }
 }
-/********************* End contact-box section *********************/
+/********************* End about-con section *********************/
+
+
+
+/********************* Start services-content section *********************/
+.services-detailes{
+  display: flex;
+  align-items: start;
+  gap: 25px;
+
+  @media screen and (max-width:$screen-lg) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left{
+    width: 100%;
+
+    .services-title{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      background-color: $main;
+      border-radius: 25px;
+      width: fit-content;
+      color: $white;
+      font-size: 17px;
+      
+      #{$ltr} & {
+        padding: 10px 25px 10px 15px;
+      }
+      #{$rtl} & {
+        padding: 10px 15px 10px 25px;
+      }
+
+      @media screen and (max-width:$screen-xs) {
+        margin: 0 auto 18px;
+      }
+    }
+
+    .desc{
+      font-size: 16px;
+      color: $black;
+      line-height: 2;
+    }
+  }
+
+
+  .services-img{
+    width: 400px;
+    height: 340px;
+    border-radius: 15px;
+    object-fit: cover;
+
+    // @media screen and (max-width:$screen-sm) {
+    //   width: 340px;
+    //   height: 300px;
+    // }
+
+    @media screen and (max-width:$screen-xs) {
+      width: 100%;
+      height: 260px;
+    }
+  }
+}
+/********************* End services-content section *********************/

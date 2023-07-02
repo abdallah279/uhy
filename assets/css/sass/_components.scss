@@ -537,6 +537,10 @@
     i{
       font-size: 15px;
       color: $white;
+
+      #{$ltr} &{
+        transform: rotate(-180deg);
+      }
     }
   }
 }

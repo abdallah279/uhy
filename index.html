@@ -57,9 +57,7 @@
                     <a href="index.html" class="link active">الرئيسية</a>
                     <a href="about-us.html" class="link">عن الشركة</a>
                     <a href="services.html" class="link">خدماتنا </a>
-                    <a href="our-works.html" class="link">أعمالنا ومشاريعنا </a>
                     <a href="our-team.html" class="link">فريق الشركة </a>
-                    <a href="blogs.html" class="link">أحدث الأخبار</a>
                     <a href="gallary.html" class="link">معرض الصور</a>
                     <a href="contact-us.html" class="link">تواصل معنا</a>
                 </div>
@@ -156,7 +154,7 @@
 
 
     <!-- Start Some Info Section -->
-    <section class="some-info main-padding" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+    <section class="some-info main-padding" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
         <div class="container">
 
             <div class="content">
@@ -175,7 +173,7 @@
 
 
     <!-- Start principles Section -->
-    <section class="principles-section main-padding" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+    <section class="principles-section main-padding"data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
         <div class="container">
 
             <div class="principles-cards">
@@ -184,7 +182,7 @@
                     
                     <div class="col-xl-4 col-md-6">
 
-                        <div class="principle-card mx-auto">
+                        <div class="principle-card mx-auto" >
                             <h2 class="prin-name">الكفاءة المهنية</h2>
                             <p class="prin-desc">
                                 إن تحقيق التوازن بين الخبرات المتألقة لأكثر من 25 عام والشباب الطموح داعم رئيسي لكفاءة مهنية عالية تقدم خدماتها بأعلى المعايير لبناء ثقة متبادلة مع عملائنا الكرام
@@ -225,7 +223,7 @@
 
 
     <!-- Start Services Section -->
-    <section class="services-sec main-padding" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+    <section class="services-sec main-padding" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
         <div class="container">
 
             <h2 class="main-title mb-5">خدماتنا</h2>
@@ -338,7 +336,7 @@
 
 
     <!-- Start Our Team  -->
-    <section class="team-sec main-padding" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+    <section class="team-sec main-padding" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
         <div class="container">
 
             <h2 class="main-title mb-5">فريق الشركة</h2>
@@ -493,6 +491,7 @@
 
     <!-- Start Footer -->
     <footer class="footer">
+        <img src="./assets/imgs/footer_bg.jpeg" alt="" class="footer_bg">
         <div class="container">
 
             <div class="row footer-cards gy-4">
@@ -529,9 +528,9 @@
                                 </a>
                             </li>
                             <li class="foot-link">
-                                <a href="our-works.html" class="link">
+                                <a href="gallary.html" class="link">
                                     <i class="fa-solid fa-arrow-left ic"></i>
-                                    <span>أعمالنا ومشاريعنا</span>
+                                    <span>معرض الصور</span>
                                 </a>
                             </li>
                             <li class="foot-link">
@@ -718,7 +717,6 @@
     <script src="./assets/plugins/countUp/jquery.countup.min.js"></script>
 
     
-
     <!-- main-slider -->
     <script>
         $(document).ready(function () { 
@@ -742,14 +740,6 @@
     <!-- services Slider -->
     <script>
         $(document).ready(function () { 
-            let items = document.querySelectorAll('.services-card');
-            let loopSlider = false;
-
-            if(items.length > 4){
-                loopSlider = true;
-            } else{
-                loopSlider = false;
-            }
 
             let isRtl2 = $('html[lang="ar"]').length > 0;
             $(".services-slider").owlCarousel({
@@ -760,6 +750,7 @@
                 smartSpeed: 2000,
                 autoplayHoverPause: false,
                 margin: 25,
+                loop: true,
                 dots: false,
                 nav: false,
                 autoplay: true,
@@ -772,10 +763,6 @@
                     },
                     560: {
                         items: 2,
-                        loop: loopSlider,
-                    },
-                    320:{
-                        loop: true,
                     }
                 }
             });
