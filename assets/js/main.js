@@ -56,3 +56,7 @@ $(".select").select2({
 dir: isRtl ? "rtl" : "ltr",
 minimumResultsForSearch: Infinity,
 });
+
+$('.num').countUp();
+
+AOS.init();

@@ -853,3 +853,88 @@
   }
 }
 /********************* End contact-box section *********************/
+
+
+
+/********************* Start contact-box section *********************/
+.about-con{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 35px;
+
+  @media screen and (max-width:$screen-lg) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-right{
+    width: 100%;
+
+    .small-title{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      background-color: $main;
+      border-radius: 25px;
+      width: fit-content;
+      color: $white;
+      font-size: 15px;
+      
+      #{$ltr} & {
+        padding: 10px 25px 10px 15px;
+      }
+      #{$rtl} & {
+        padding: 10px 15px 10px 25px;
+      }
+    }
+
+    .about-title{
+      font-size: 24px;
+      color: $black;
+      margin-bottom: 18px;
+    }
+
+    .desc{
+      font-size: 15px;
+      color: $black;
+      line-height: 1.9;
+    }
+  }
+
+
+  .about-img{
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      border: 1px solid $main;
+      top: 20px;
+      @include dir-right(20px);
+      z-index: 2;
+    }
+
+    .img{
+      width: 400px;
+      height: 340px;
+      border-radius: 15px;
+      object-fit: cover;
+
+      @media screen and (max-width:$screen-sm) {
+        width: 340px;
+        height: 300px;
+      }
+
+      @media screen and (max-width:$screen-xxs) {
+        width: 260px;
+        height: 260px;
+      }
+    }
+  }
+}
+/********************* End contact-box section *********************/

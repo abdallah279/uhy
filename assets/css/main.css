@@ -4034,4 +4034,88 @@ html[lang=ar] .services-card:hover .services-content .left-icon {
   }
 }
 
+/********************* End contact-box section *********************/
+/********************* Start contact-box section *********************/
+.about-con {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 35px;
+}
+@media screen and (max-width: 992px) {
+  .about-con {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about-con .about-right {
+  width: 100%;
+}
+.about-con .about-right .small-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  background-color: #094d8e;
+  border-radius: 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  font-size: 15px;
+}
+html[lang=en] .about-con .about-right .small-title {
+  padding: 10px 25px 10px 15px;
+}
+html[lang=ar] .about-con .about-right .small-title {
+  padding: 10px 15px 10px 25px;
+}
+.about-con .about-right .about-title {
+  font-size: 24px;
+  color: #272424;
+  margin-bottom: 18px;
+}
+.about-con .about-right .desc {
+  font-size: 15px;
+  color: #272424;
+  line-height: 1.9;
+}
+.about-con .about-img {
+  position: relative;
+}
+.about-con .about-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid #094d8e;
+  top: 20px;
+  z-index: 2;
+}
+html[lang=en] .about-con .about-img::after {
+  right: 20px;
+}
+html[lang=ar] .about-con .about-img::after {
+  left: 20px;
+}
+.about-con .about-img .img {
+  width: 400px;
+  height: 340px;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 576px) {
+  .about-con .about-img .img {
+    width: 340px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about-con .about-img .img {
+    width: 260px;
+    height: 260px;
+  }
+}
+
 /********************* End contact-box section *********************//*# sourceMappingURL=main.css.map */
