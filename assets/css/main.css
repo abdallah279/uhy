@@ -3133,7 +3133,7 @@ html[lang=ar] .page-navbar .navbar-content .links .link::before {
   right: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.3;
+  opacity: 0.8;
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
