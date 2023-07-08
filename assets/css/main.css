@@ -36,6 +36,7 @@
 /* Overlay */
 /* Grid */
 /* translate */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 * {
   border: 0;
   margin: 0;
@@ -86,16 +87,17 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  font-family: fontMed;
   overflow-x: hidden;
 }
 html[lang=en] body {
   direction: ltr;
   text-align: left;
+  font-family: "Poppins", sans-serif;
 }
 html[lang=ar] body {
   direction: rtl;
   text-align: right;
+  font-family: fontMed;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -3124,8 +3126,10 @@ html[lang=ar] .page-navbar .navbar-content .links .link::before {
   padding-top: 40px;
   position: relative;
   margin-top: 20px;
-  font-family: JF-flat !important;
   border-top: 1px solid #f2f2f2;
+}
+.footer .row .col-lg-3:nth-child(3) .footer-links {
+  font-family: "Poppins", sans-serif !important;
 }
 .footer .footer_bg {
   position: absolute;

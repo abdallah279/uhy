@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
 *{
     border: 0;
     margin: 0;
@@ -52,17 +54,18 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    font-family: fontMed;
     overflow-x: hidden;
     // background-color: $sec;
     
     #{$ltr} & {
         direction: ltr;
         text-align: left;
+        font-family: 'Poppins', sans-serif;
     }
     #{$rtl} & {
         direction: rtl; 
         text-align: right;
+        font-family: fontMed;
     }
 }
 
