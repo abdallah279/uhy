@@ -603,10 +603,16 @@
 .main-title{
   font-size: 20px;
   color: $main;
-  font-family: fontDemi;
   margin: auto;
   width: fit-content;
   position: relative;
+
+  #{$ltr} & {
+    font-family: 'Poppins', sans-serif;
+  }
+  #{$rtl} & {
+    font-family: fontDemi;
+  }
 
   &::after, &::before{
     position: absolute;

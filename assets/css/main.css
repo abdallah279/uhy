@@ -834,11 +834,16 @@ html[lang=ar] .iti--allow-dropdown .iti__flag-container, html[lang=ar] .iti--sep
 .main-title {
   font-size: 20px;
   color: #094d8e;
-  font-family: fontDemi;
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
+}
+html[lang=en] .main-title {
+  font-family: "Poppins", sans-serif;
+}
+html[lang=ar] .main-title {
+  font-family: fontDemi;
 }
 .main-title::after, .main-title::before {
   position: absolute;
@@ -3148,6 +3153,11 @@ html[lang=ar] .page-navbar .navbar-content .links .link::before {
   color: #094d8e;
   width: -moz-fit-content;
   width: fit-content;
+}
+html[lang=en] .footer .foot-content .footer-head {
+  font-family: "Poppins", sans-serif;
+}
+html[lang=ar] .footer .foot-content .footer-head {
   font-family: fontDemi;
 }
 @media screen and (max-width: 425px) {
@@ -3580,20 +3590,35 @@ html[lang=ar] .services-card .services-img {
   position: relative;
 }
 .services-card .services-content .services-head {
-  font-size: 22px;
   color: #fff;
   margin-bottom: 15px;
+  height: 27px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+html[lang=en] .services-card .services-content .services-head {
+  font-size: 19px;
+}
+html[lang=ar] .services-card .services-content .services-head {
+  font-size: 22px;
 }
 .services-card .services-content .services-desc {
   font-size: 15px;
   line-height: 1.6;
   color: #fff;
-  font-family: fontReg;
   height: 72px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+html[lang=en] .services-card .services-content .services-desc {
+  font-family: "Poppins", sans-serif;
+}
+html[lang=ar] .services-card .services-content .services-desc {
+  font-family: fontReg;
 }
 .services-card .services-content .left-icon {
   position: absolute;
@@ -3741,12 +3766,22 @@ html[lang=ar] .services-card:hover .services-content .left-icon {
   font-size: 18px;
   margin-bottom: 22px;
   color: #fff;
+}
+html[lang=en] .team-card .team-content .team-jop {
+  font-family: "Poppins", sans-serif;
+}
+html[lang=ar] .team-card .team-content .team-jop {
   font-family: fontReg;
 }
 .team-card .team-content .team-desc {
   font-size: 15px;
   color: #fff;
   line-height: 1.6;
+}
+html[lang=en] .team-card .team-content .team-desc {
+  font-family: "Poppins", sans-serif;
+}
+html[lang=ar] .team-card .team-content .team-desc {
   font-family: fontReg;
 }
 .team-card:hover .team-content::after {

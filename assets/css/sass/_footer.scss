@@ -30,7 +30,13 @@
             font-size: 20px;
             color: $main;
             width: fit-content;
-            font-family: fontDemi;
+            
+            #{$ltr} & {
+                font-family: 'Poppins', sans-serif;
+            }
+            #{$rtl} & {
+                font-family: fontDemi;
+            }
 
             @media screen and (max-width:$screen-xs) {
                 font-size: 18px;
