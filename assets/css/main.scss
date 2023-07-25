@@ -274,6 +274,28 @@
 
 
 /********************* Start services section *********************/
+.services-slider{
+  position: relative;
+
+  .owl-prev, .owl-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include circle(40px);
+    border: 1px solid $main !important;
+    background-color: $main !important;
+    color: $white !important;
+    @include center;
+  }
+  
+  .owl-prev{
+    right: -55px;
+  }
+  
+  .owl-next{
+    left: -55px;
+  }
+}
 .services-card{
   background-color: #f8f8f8;
   border-radius: 15px;

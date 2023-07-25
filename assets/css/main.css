@@ -3527,6 +3527,30 @@ html[lang=ar] .principle-card::before {
 
 /********************* End principle section *********************/
 /********************* Start services section *********************/
+.services-slider {
+  position: relative;
+}
+.services-slider .owl-prev, .services-slider .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #094d8e !important;
+  background-color: #094d8e !important;
+  color: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-slider .owl-prev {
+  right: -55px;
+}
+.services-slider .owl-next {
+  left: -55px;
+}
+
 .services-card {
   background-color: #f8f8f8;
   border-radius: 15px;
